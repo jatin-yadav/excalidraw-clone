@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.send("welcome to http server");
 });
 
+app.get("/test", (req, res) => {
+  res.send("welcome to http server");
+});
+
 app.post("/signup", (req, res) => {
   const { username, email, password } = req.body;
   res.send(`signup success ${username} ${email} ${password}`);
